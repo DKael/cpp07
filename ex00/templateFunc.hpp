@@ -1,0 +1,4 @@
+#ifndef TEMPLATEFUNC_HPP
+#define TEMPLATEFUNC_HPP
+
+#endif
