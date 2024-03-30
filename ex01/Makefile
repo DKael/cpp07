@@ -8,7 +8,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = templateFuncs
+NAME = iter
 
 ${NAME} : ${TOTAL_OBJS}
 	${CXX} ${CXXFLAGS} ${TOTAL_OBJS} -o $@

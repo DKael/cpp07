@@ -1,4 +1,4 @@
-// #include <complex>
+#include <complex>
 #include <iostream>
 #include <string>
 
@@ -86,17 +86,17 @@ int main() {
             << ") : " << ::max(cStrVal0, cStrVal1) << '\n';
   std::cout << "------------------------------------------------------------\n";
 
-  // std::complex<double> compVal0 = std::complex<double>(7, -12);
-  // std::complex<double> compVal1 = std::complex<double>(-42, 42);
+  std::complex<double> compVal0 = std::complex<double>(7, -12);
+  std::complex<double> compVal1 = std::complex<double>(-42, 42);
 
-  // std::cout << "Before swap\n";
-  // std::cout << "compVal0 : " << compVal0 << '\n';
-  // std::cout << "compVal1 : " << compVal1 << '\n';
+  std::cout << "Before swap\n";
+  std::cout << "compVal0 : " << compVal0 << '\n';
+  std::cout << "compVal1 : " << compVal1 << '\n';
 
-  // std::cout << "After void swap(T& arg1, T& arg2)\n";
-  // ::swap(compVal0, compVal1);
-  // std::cout << "compVal0 : " << compVal0 << '\n';
-  // std::cout << "compVal1 : " << compVal1 << '\n';
+  std::cout << "After void swap(T& arg1, T& arg2)\n";
+  ::swap(compVal0, compVal1);
+  std::cout << "compVal0 : " << compVal0 << '\n';
+  std::cout << "compVal1 : " << compVal1 << '\n';
 
   // std::cout << "\nmin() & max() result\n";
   // std::cout << "min(" << compVal0 << ", " << compVal1
