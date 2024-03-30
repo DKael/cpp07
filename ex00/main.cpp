@@ -78,8 +78,8 @@ int main() {
   std::cout << "cStrVal1 : " << cStrVal1 << '\n';
 
   std::cout << "\nmin() & max() result\n";
-  std::cout << "cStrVal0 : " << reinterpret_cast<uint64_t>(cStrVal0) << '\n';
-  std::cout << "cStrVal1 : " << reinterpret_cast<uint64_t>(cStrVal1) << '\n';
+  std::cout << "cStrVal0 : " << reinterpret_cast<u_int64_t>(cStrVal0) << '\n';
+  std::cout << "cStrVal1 : " << reinterpret_cast<u_int64_t>(cStrVal1) << '\n';
   std::cout << "min(" << cStrVal0 << ", " << cStrVal1
             << ") : " << ::min(cStrVal0, cStrVal1) << '\n';
   std::cout << "max(" << cStrVal0 << ", " << cStrVal1

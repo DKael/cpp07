@@ -31,7 +31,7 @@ Array<T>& Array<T>::operator=(const Array<T>& origin) {
     len = origin.len;
 
     arrPtr = new T[len];
-    if (arrPtr == nullptr) {
+    if (arrPtr == NULL) {
       throw std::bad_alloc();
     }
     for (std::size_t i = 0; i < len; i++) {
