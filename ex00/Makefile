@@ -4,17 +4,17 @@ OBJS = 	${SRCS:.cpp=.o}
 
 TOTAL_OBJS = ${OBJS}
 
-CC = c++
+CXX = c++
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = convert
+NAME = templateFunctions
 
 ${NAME} : ${TOTAL_OBJS}
-	${CC} ${CFLAGS} ${TOTAL_OBJS} -o $@
+	${CXX} ${CXXFLAGS} ${TOTAL_OBJS} -o $@
 
 %.o :%.cpp
-	${CC} ${CFLAGS} -c -I. $< -o $@
+	${CXX} ${CXXFLAGS} -c -I. $< -o $@
 
 all : ${NAME}
 
